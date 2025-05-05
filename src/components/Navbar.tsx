@@ -1,15 +1,11 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X, Phone, Mail } from "lucide-react";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
-  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -18,24 +14,16 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  return (
-    <nav 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-        isScrolled ? "glass shadow-md py-3" : "bg-transparent"
-      )}
-    >
+  return <nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4", isScrolled ? "glass shadow-md py-3" : "bg-transparent")}>
       <div className="container-width flex items-center justify-between px-4 md:px-8">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-estate-900">
-            Realty 1 <span className="text-estate-600">Maryland LLC</span>
+            Realty 1 <span className="text-estate-600">Maryland</span>
           </a>
         </div>
         
@@ -62,8 +50,7 @@ const Navbar = () => {
       </div>
       
       {/* Mobile menu */}
-      {isOpen && (
-        <div className="md:hidden glass absolute top-full left-0 right-0 p-4 shadow-lg animate-fade-in">
+      {isOpen && <div className="md:hidden glass absolute top-full left-0 right-0 p-4 shadow-lg animate-fade-in">
           <div className="flex flex-col space-y-4">
             <a href="#home" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Home</a>
             <a href="#properties" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Buying</a>
@@ -75,10 +62,7 @@ const Navbar = () => {
               <span>410-696-2268</span>
             </Button>
           </div>
-        </div>
-      )}
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navbar;
