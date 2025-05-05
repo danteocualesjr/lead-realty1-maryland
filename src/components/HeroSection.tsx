@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Home } from "lucide-react";
+import { ArrowRight, Home, Search } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -19,20 +19,21 @@ const HeroSection = () => {
           <div className="inline-block mb-4 py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
             <p className="text-sm font-medium flex items-center gap-2">
               <Home size={16} />
-              <span>Premier Maryland Real Estate</span>
+              <span>Howard County, Maryland</span>
             </p>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">Find Your Perfect Home in Maryland</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">Your #1 source for all your real estate needs</h1>
           <p className="text-xl md:text-2xl mb-8 text-white/80 font-light max-w-2xl">
-            Experience the difference with our personalized approach to real estate in Maryland and surrounding areas.
+            Experience our personalized approach to real estate in Maryland and surrounding areas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-white text-estate-900 hover:bg-white/90 font-medium text-base px-6 py-6">
-              Browse Properties
+              <Search size={16} className="mr-2" />
+              Search Properties
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 font-medium text-base px-6 py-6">
-              <span>Meet Our Agents</span>
+              <span>Contact Our Agents</span>
               <ArrowRight size={16} className="ml-2" />
             </Button>
           </div>
@@ -56,8 +57,8 @@ const HeroSection = () => {
               <p className="text-estate-600 mt-2">Client Satisfaction</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-estate-800">24/7</p>
-              <p className="text-estate-600 mt-2">Support</p>
+              <p className="text-4xl font-bold text-estate-800">Local</p>
+              <p className="text-estate-600 mt-2">Ellicott City, MD</p>
             </div>
           </div>
         </div>

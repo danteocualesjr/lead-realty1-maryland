@@ -8,11 +8,11 @@ const AboutSection = () => {
       <div className="container-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Maryland's Premier Real Estate Company</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Locally-Owned, Client-Focused Real Estate</h2>
             <p className="text-estate-600 mb-6 text-lg">
-              Realty One has been serving Maryland homebuyers and sellers for over 15 years. 
+              Realty 1 Maryland LLC has been proudly serving Howard County and the surrounding areas. 
               Our team of experienced real estate professionals is dedicated to providing 
-              exceptional service with integrity and expertise.
+              exceptional service with integrity, expertise, and a personal touch.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -21,10 +21,10 @@ const AboutSection = () => {
                   <Users className="w-5 h-5 text-estate-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Experienced Team</h3>
+                  <h3 className="font-bold text-xl mb-2">Local Expertise</h3>
                   <p className="text-estate-600">
-                    Our agents have an average of 10+ years in the Maryland real estate market,
-                    with specialized knowledge of local neighborhoods and property values.
+                    Our agents have deep knowledge of Howard County and Maryland real estate markets,
+                    with specialized understanding of local neighborhoods and property values.
                   </p>
                 </div>
               </div>
@@ -47,16 +47,16 @@ const AboutSection = () => {
                   <GalleryHorizontal className="w-5 h-5 text-estate-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Comprehensive Services</h3>
+                  <h3 className="font-bold text-xl mb-2">Full-Service Agency</h3>
                   <p className="text-estate-600">
                     From listings and viewings to negotiations and closings, we provide 
-                    full-service support for buyers and sellers alike.
+                    comprehensive support for buyers, sellers, and investors alike.
                   </p>
                 </div>
               </div>
             </div>
             
-            <Button className="bg-estate-600 hover:bg-estate-700 text-white">Learn More About Us</Button>
+            <Button className="bg-estate-600 hover:bg-estate-700 text-white">Meet Our Agents</Button>
           </div>
           
           <div className="order-1 lg:order-2">
@@ -64,7 +64,7 @@ const AboutSection = () => {
               <div className="rounded-2xl overflow-hidden w-full aspect-square">
                 <img 
                   src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=800" 
-                  alt="Realty One Team" 
+                  alt="Realty 1 Maryland Team" 
                   className="w-full h-full object-cover"
                 />
               </div>

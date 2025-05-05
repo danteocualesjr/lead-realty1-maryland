@@ -4,20 +4,20 @@ import { Building, Home, Search, Users } from "lucide-react";
 
 const services = [
   {
-    title: "Property Sales",
-    description: "We help you sell your property at the best market value with our strategic pricing, effective marketing, and skilled negotiation tactics.",
-    icon: Building,
+    title: "Buying Properties",
+    description: "Whether you're a first-time buyer or experienced investor, our team provides expert guidance through the entire home buying process.",
+    icon: Home,
     color: "bg-blue-50 text-blue-500",
   },
   {
-    title: "Property Purchase",
-    description: "Find your dream home with personalized property searches, virtual tours, and expert guidance through the entire buying process.",
-    icon: Home,
+    title: "Selling Properties",
+    description: "We offer strategic pricing, effective marketing, and skilled negotiation tactics to help you sell your property at the best market value.",
+    icon: Building,
     color: "bg-green-50 text-green-500",
   },
   {
-    title: "Property Management",
-    description: "Maximize your investment with our comprehensive property management services, including tenant screening and maintenance handling.",
+    title: "Renting Options",
+    description: "From residential apartments to commercial spaces, we provide comprehensive leasing services for both property owners and tenants.",
     icon: Users,
     color: "bg-purple-50 text-purple-500",
   },
@@ -37,7 +37,7 @@ const ServicesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Real Estate Services</h2>
           <p className="text-estate-600 max-w-2xl mx-auto">
             We offer a comprehensive range of professional real estate services designed 
-            to meet all your property needs in Maryland and the surrounding areas.
+            to meet all your property needs in Maryland, Virginia, and surrounding areas.
           </p>
         </div>
         

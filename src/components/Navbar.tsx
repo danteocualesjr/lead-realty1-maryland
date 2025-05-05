@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,22 +35,22 @@ const Navbar = () => {
       <div className="container-width flex items-center justify-between px-4 md:px-8">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-estate-900">
-            Realty<span className="text-estate-600">One</span>
+            Realty 1 <span className="text-estate-600">Maryland LLC</span>
           </a>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
           <a href="#home" className="font-medium hover:text-estate-600 transition-colors">Home</a>
-          <a href="#properties" className="font-medium hover:text-estate-600 transition-colors">Properties</a>
-          <a href="#about" className="font-medium hover:text-estate-600 transition-colors">About</a>
-          <a href="#services" className="font-medium hover:text-estate-600 transition-colors">Services</a>
+          <a href="#properties" className="font-medium hover:text-estate-600 transition-colors">Buying</a>
+          <a href="#services" className="font-medium hover:text-estate-600 transition-colors">Selling</a>
+          <a href="#about" className="font-medium hover:text-estate-600 transition-colors">Agents</a>
           <a href="#contact" className="font-medium hover:text-estate-600 transition-colors">Contact</a>
         </div>
         
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="outline" className="flex items-center gap-2 border-estate-600 text-estate-600 hover:bg-estate-600 hover:text-white">
             <Phone size={16} />
-            <span>410-357-4338</span>
+            <span>410-696-2268</span>
           </Button>
         </div>
         
@@ -66,13 +66,13 @@ const Navbar = () => {
         <div className="md:hidden glass absolute top-full left-0 right-0 p-4 shadow-lg animate-fade-in">
           <div className="flex flex-col space-y-4">
             <a href="#home" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Home</a>
-            <a href="#properties" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Properties</a>
-            <a href="#about" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>About</a>
-            <a href="#services" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Services</a>
+            <a href="#properties" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Buying</a>
+            <a href="#services" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Selling</a>
+            <a href="#about" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Agents</a>
             <a href="#contact" className="font-medium p-2 hover:bg-estate-100 rounded-md" onClick={toggleMenu}>Contact</a>
             <Button className="flex items-center gap-2 bg-estate-600 hover:bg-estate-700">
               <Phone size={16} />
-              <span>410-357-4338</span>
+              <span>410-696-2268</span>
             </Button>
           </div>
         </div>
